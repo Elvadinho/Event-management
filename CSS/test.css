@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-section{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background: linear-gradient(to right,#59caec,rgb(21, 153, 241));
+}
+
+#logo{
+    height: 100px;
+    position: relative;
+    left: 100px;
+    float: left;
+    mix-blend-mode: multiply; 
+}
+
+.nav-menu{
+    float: right;
+}
+
+.nav-menu .mainmenu {
+	display: inline-block;
+}
+
+.nav-menu .mainmenu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 42px 0;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    left: 500px;
+    bottom: 100px;
+}
+
+.register{
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+    border: 2px solid rgb(128, 11, 128);
+    border-radius: 25px;
+    padding: 10px;
+    font-family: 'Consolas';
+    color: white;
+    font-weight: 600;
+    background-color: rgb(128, 11, 128);
+}

@@ -1,0 +1,67 @@
+/*Header*/
+.header-section{
+    
+    height: 200vh;
+    width: 200%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+.header-section{
+    display: flex;
+}
+
+.header-section{
+    height: 10%;
+}
+
+.logoc{
+    float: left;
+    
+}
+
+#logo{
+    height: 100px;
+    position: relative;
+    left: 100px;
+}
+
+.nav-menu {
+	float: right;
+}
+
+.nav-menu .mainmenu {
+	display: inline-block;
+}
+
+.nav-menu .mainmenu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 42px 0;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    left: 400px;
+}
+
+.register{
+    position: relative;
+    left: 400px;
+    border: 2px solid rgb(235, 2, 235);
+    border-radius: 25px;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(218, 76, 223), purple);
+    font-family: 'Consolas';
+    color: white;
+    font-weight: 600;
+
+}
+
