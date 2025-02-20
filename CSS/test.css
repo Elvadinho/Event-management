@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url(../images/bgimg.jpeg) no-repeat;
-    background-size: cover;
-    min-height: 100vh;
 }
 
 .header-section{
@@ -65,8 +62,10 @@
 
 
 /* main Style */
-.contaner-body{
-    background:url(../images/abstract-grunge-music-live-concert-poster-design_1017-9864.avif) ;
+.main{
+    background:url(../images/bgimg.jpeg) no-repeat center center ;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 /* main Style */
