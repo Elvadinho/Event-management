@@ -66,6 +66,7 @@
     background:url(../images/newBG.jpeg) no-repeat center center ;
     background-size: cover;
     min-height: 100vh;
+    opacity: 2;
 }
 
 /* main Style */
@@ -75,8 +76,9 @@
 
 .footer-section{
     background: #171822;
-    height: 100px;
+    height: 120px;
     display: flex;
+    text-align: center;
 }
 
 .right{
@@ -107,16 +109,33 @@
     height: 40px;
     text-align: center;
     line-height: 40px;
-    font-size: 16px;
+    font-size: 40px;
     color: #a3a3ae;
-    border: 1px solid #45464e;
-    border-radius: 50%;
     margin-right: 15px;
     position: relative;
     left: 650px;
     top: 40px;
-    
+    justify-content: space-evenly;
 }
 
+.social-links #you:hover{
+    color: red;
+}
+
+.social-links #face:hover{
+    color: blue;
+}
+
+.social-links #link:hover{
+    color: rgb(51, 51, 250);
+}
+
+.social-links #ins:hover{
+    color: orange;
+}
+
+.social-links #twi:hover{
+    color: lightseagreen;
+}
 
 /* Footer style*/
