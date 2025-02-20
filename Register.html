@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+        /* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body #logo{
+    height: 150px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    position: relative;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #764ba2;
+    outline: none;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #764ba2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e7ad0d;
+}
+
+/* Error messages */
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <img id="logo" src="images/abstract-grunge-music-live-concert-poster-design_1017-9864.avif" alt="logo">
+        <h2>Sign Up</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" required>
+                    <span class="toggle-password">👁️</span>
+                </div>
+                <span class="error-message"></span>
+                <small>Password must be at least 8 characters long</small>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="error-message"></span>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
