@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 3px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background:url(images/10.jpg) center center no-repeat;
+            background-size: cover;
+        }
+
+        .container img{
+            height: 120px;
+            mix-blend-mode: multiply;
+        }
+
+        .container{
+            background: wheat;
+            padding: 30px;
+            border: solid black 2px;
+            border-radius: 10%;
+            box-shadow: 10px 10px 10px rgb(250, 169, 136);
+            font-size: 20px;
+            font-family: arial, sans-serif;
+        }
+
+        #send{
+            position: relative;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/abstract-grunge-music-live-concert-poster-design_1017-9864.avif" alt="logo">
+        <div id="ticket">
+            <h1>Buy your tickets</h1>
+        </div>
+        
+        <form>
+            <div id="pass">
+                <div>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name" placeholder="Edwards">
+                </div>
+
+                <label>Single</label>: 10,00frs
+                <input type="radio" name="title" value="Single">
+
+                <br>
+
+                <label>Couple</label>: 15,000frs
+                <input type="radio" name="title" value="Couple">
+            </div>
+
+            <div>
+                <label for="payment">Payment</label>
+                <select name="payment" id="payment">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="orange">OM</option>
+                    <option value="mtn">MOMO</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="reset">
+            </div>
+
+            <div>
+                <input type="submit" id="send">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
