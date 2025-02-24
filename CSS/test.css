@@ -39,8 +39,6 @@
     text-transform: uppercase;
     font-weight: 600;
     padding: 42px 0;
-    position: relative;
-    display: inline-block;
     text-align: center;
     justify-content: center;
     left: 500px;
@@ -51,13 +49,25 @@
     position: relative;
     left: 500px;
     bottom: 100px;
-    border: 2px solid rgb(128, 11, 128);
+    border: 2px solid #b341e4;
     border-radius: 25px;
     padding: 10px;
     font-family: 'Consolas';
-    color: white;
+    color: #A3D1E0;
     font-weight: 600;
-    background-color: rgb(128, 11, 128);
+    background-color: #8E44AD;
+}
+
+.nav-menu .mainmenu ul li:hover{
+    border-bottom: solid 1px white;
+    color: white;
+    position: relative;
+    bottom: 100px;
+}
+
+.register:hover{
+    color: #A3D1E0;
+    background-color: #001F3F;
 }
 /* Header style */
 
