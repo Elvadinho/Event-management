@@ -9,7 +9,8 @@
     width: 100%;
     height: 100px;
     display: flex;
-    background: linear-gradient(to right,rgb(252, 210, 74), #18b5f3);
+    /*background: linear-gradient(to right,rgb(252, 210, 74), #18b5f3);*/
+    background-color: #A3D1E0;
 }
 
 #logo{
@@ -63,7 +64,7 @@
 
 /* main Style */
 .main{
-    background:url(../images/newBG.jpeg) no-repeat center center ;
+    background:url(../images/4882066.jpg) no-repeat center center ;
     background-size: cover;
     min-height: 100vh;
     opacity: 2;
@@ -75,7 +76,7 @@
 /* Footer style Begin*/
 
 .footer-section{
-    background: #171822;
+    background: #001F3F;
     height: 120px;
     display: flex;
     text-align: center;
