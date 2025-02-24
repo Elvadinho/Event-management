@@ -1,10 +1,19 @@
-document.addEventListener("DOMContentLoaded", function(){
-    let currentpage = window.location.pathname.split("/").pop();
-    if (currentpage === "") currentpage = "index.html";
+function updateCountdown(){
+    const eventDate = new Date("March 1, 2025 00:00:00").getTime();
+    const now = new Date().getTime();
+    const timeleft = eventDate - now;
 
-    document.querySelectorAll(".nav-link").forEach(link => {
-        if (link.getAttribute("href") === currentpage){
-            link.classList.add("active");
-        }
-    })
-});
+    if(timeleft <= 0){
+        document.getElementById("timer").innerHTML = "The event has started";
+        return;
+    }
+
+    const days = Math.floor(timeleft / (1000 *60 *60 *24));
+    const hours = Math.floor((timeleft / (1000 *60 *60 *24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeleft / (1000 *60 *60)) / (1000 * 60));
+    const seconds = Math.floor((timeleft % (1000 * 60))/1000);
+
+    document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+updateCountdown();
+setInterval(updateCountdown,1000);

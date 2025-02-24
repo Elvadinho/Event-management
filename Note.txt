@@ -1,0 +1,3 @@
+header #EDE8F5
+body #8697C4
+footer  #3D52A0
