@@ -1,0 +1,187 @@
+/* Header style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-section{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    /*background: linear-gradient(to right,rgb(252, 210, 74), #18b5f3);*/
+    background-color: #EDE8F5;
+}
+
+#logo{
+    height: 100px;
+    position: relative;
+    margin-left: 100px;
+    float: left;
+    mix-blend-mode: multiply; 
+}
+
+.nav-menu{
+    float: right;
+}
+
+.nav-menu .mainmenu {
+	display: inline-block;
+}
+
+.nav-menu .mainmenu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 42px 0;
+    text-align: center;
+    justify-content: center;
+    left: 500px;
+    bottom: 100px;
+}
+
+.register{
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+    border: 2px solid #b341e4;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: 'Consolas';
+    color: #A3D1E0;
+    font-weight: 600;
+    background-color: #8E44AD;
+}
+
+.nav-menu .mainmenu ul li:hover{
+    border-bottom: solid 1px white;
+    color: rgb(235, 118, 71);
+    position: relative;
+    bottom: 100px;
+}
+
+.register:hover{
+    color: #A3D1E0;
+    background-color: #001F3F;
+}
+
+/* Header style */
+
+/* General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8697C4;
+    color: #333;
+}
+
+.main-body {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Header */
+#bio h1 {
+    font-size: 42px;
+    text-align: center;
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+/* Biography Sections */
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Flexbox for even and odd divs */
+.even-div, .odd-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.even-div:hover, .odd-div:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Alternating image and text layout */
+.even-div {
+    flex-direction: row;
+}
+
+.odd-div {
+    flex-direction: row-reverse;
+}
+
+.even-img, .odd-img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Text content */
+.name h2 {
+    font-size: 28px;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.name h2:hover {
+    color: #1abc9c; /* Change color on hover */
+}
+
+.even, .odd {
+    max-width: 60%;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sec1 {
+        flex-direction: column;
+    }
+
+    .even-div, .odd-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .even-img, .odd-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
