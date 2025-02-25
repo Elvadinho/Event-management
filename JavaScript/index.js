@@ -1,3 +1,5 @@
+/*Timer function START*/
+
 function updateCountdown() {
     const eventDate = new Date("March 1, 2025 00:00:00").getTime();
     const now = new Date().getTime();
@@ -15,6 +17,8 @@ function updateCountdown() {
 
     document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
-
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+/*Timer function END*/
+
