@@ -60,7 +60,7 @@
 
 .nav-menu .mainmenu ul li:hover{
     border-bottom: solid 1px white;
-    color: rgb(145, 140, 140);
+    color: rgb(235, 118, 71);
     position: relative;
     bottom: 100px;
 }
@@ -92,7 +92,7 @@
     font-family: arial, sans-serif;
     font-size: 28px;
     font-weight: 900;
-    color:rgb(235, 177, 71);
+    color:rgb(235, 118, 71);
 }
 
 #body{
