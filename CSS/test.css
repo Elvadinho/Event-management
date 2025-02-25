@@ -82,17 +82,48 @@
     padding: 100px;
 }
 
-.border{
-    border: solid 1px black;
-    background-color: #EDE8F5;
-    border-radius: 20px;
+#title{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: rgb(235, 118, 71);
+}
+
+.artist{
+    color: #FF6600;
+}
+
+#music-genre{
+    font-style: italic;
+    color: #FF6600;
 }
 
 #intro{
     font-family: arial, sans-serif;
-    font-size: 28px;
-    font-weight: 900;
-    color:rgb(235, 118, 71);
+    font-size: 25px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(1235deg, #1A1A1A,#333);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255,204,0,0.5);
+}
+
+#intro h3{
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #ffcc00,#FF6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#intro p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #DDD;
 }
 
 #body{
@@ -102,11 +133,16 @@
 }
 
 .countdown{
-    font-size: 2rem;
+    /* font-size: 2rem;
     background: #222;
     padding: 20px;
     border-radius: 10px;
-    position: relative;
+    position: relative; */
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    display: inline-block;
 }
 
 .time{
