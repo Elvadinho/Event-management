@@ -43,6 +43,7 @@
     justify-content: center;
     left: 500px;
     bottom: 100px;
+    font-family: 'Arial', sans-serif;
 }
 
 .register{
@@ -213,12 +214,12 @@
     color: rgb(51, 51, 250);
 }
 
-.social-links #ins:hover{
-    color: orange;
+.social-links #github:hover{
+    color: purple;
 }
 
 .social-links #twi:hover{
-    color: aqua;
+    color: white;
 }
 
 /* Footer style*/

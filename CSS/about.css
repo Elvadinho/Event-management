@@ -10,7 +10,7 @@
     height: 100px;
     display: flex;
     /*background: linear-gradient(to right,rgb(252, 210, 74), #18b5f3);*/
-    background-color: #EDE8F5;
+    background-color: #0FA4AF;
 }
 
 #logo{
@@ -67,7 +67,7 @@
 
 .register:hover{
     color: #A3D1E0;
-    background-color: #001F3F;
+    background-color: #964734;
 }
 
 /* Header style */
@@ -77,7 +77,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8697C4;
+    background-color: #003135;
     color: #333;
 }
 
@@ -91,7 +91,8 @@ body {
 #bio h1 {
     font-size: 42px;
     text-align: center;
-    color: #2c3e50;
+    color: #00ffcc;
+    text-shadow: 0px 0px 10px #00ffcc;
     text-transform: uppercase;
     margin-bottom: 40px;
     letter-spacing: 2px;
@@ -117,6 +118,7 @@ body {
 }
 
 .even-div:hover, .odd-div:hover {
+    box-shadow: 0px 0px 30px rgba(0, 255, 204, 1);
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
